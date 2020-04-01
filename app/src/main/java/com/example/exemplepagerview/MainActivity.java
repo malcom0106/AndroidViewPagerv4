@@ -64,5 +64,25 @@ public class MainActivity extends AppCompatActivity {
         public int getCount() {
             return fragments.size();
         }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+
+            String title="";
+
+            switch (position)
+            {
+                case 0:
+                    title = "Pourquoi";
+                    break;
+                case 1:
+                    title = "Avantages";
+                    break;
+                case 2:
+                    title = "le chat";
+                    break;
+            }
+            return title;
+        }
     }
 }
