@@ -42,13 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
         //On recupere notre ViewPager
         ViewPager viewPager = findViewById(R.id.vpPages);
-
-
+        //On instancie un FragmentManager
         fragmentManager = getSupportFragmentManager();
-        //MainFragment mainFragment = new MainFragment();
-        //ReplaceFragment(mainFragment, "mainFragment");
-
+        //On Instencie mon MyAdapterPager
         MyAdapterPager myAdapterPager = new MyAdapterPager(fragmentManager);
+        //On lie mon pager à notre Adapter
         viewPager.setAdapter(myAdapterPager);
     }
 
