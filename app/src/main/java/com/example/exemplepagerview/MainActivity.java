@@ -53,15 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-    private void ReplaceFragment(Fragment fragment, String Nom){
-        FragmentTransaction fragmentTransaction =
-                fragmentManager.beginTransaction()
-                .replace(R.id.vpPages,fragment)
-                .addToBackStack(Nom);
-        fragmentTransaction.commit();
-    }
-
     private class MyAdapterPager extends FragmentPagerAdapter{
         //Constructeur
         public MyAdapterPager(FragmentManager fm) {
@@ -75,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 3;
+            return fragments.size();
         }
     }
 }
