@@ -67,19 +67,17 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
-
             String title="";
-
             switch (position)
             {
                 case 0:
-                    title = "Pourquoi";
+                    title = "Main";
                     break;
                 case 1:
-                    title = "Avantages";
+                    title = "Fragment 1";
                     break;
                 case 2:
-                    title = "le chat";
+                    title = "Fragment 2";
                     break;
             }
             return title;
