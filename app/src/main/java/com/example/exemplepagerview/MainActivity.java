@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         //On instencie nos fragments
         mainFragment = new MainFragment();
         fragment1 = new Fragment1();
