@@ -16,11 +16,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     FragmentManager fragmentManager = null;
-    //On declare en Global nos fragment
+    //On declare en Global nos fragments
     MainFragment mainFragment;
     Fragment1 fragment1;
     Fragment2 fragment2;
+    //On declare en Global un tableau de Fragments
     ArrayList<Fragment> fragments = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,9 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
         MyAdapterPager myAdapterPager = new MyAdapterPager(fragmentManager);
         viewPager.setAdapter(myAdapterPager);
-
-
-
     }
 
     private class MyAdapterPager extends FragmentPagerAdapter{
